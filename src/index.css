@@ -1,13 +1,123 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+  --serif: "Noto Serif Display", serif;
+  --sans: 'Lato', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  padding: 0px;
+  font-family: var(--sans);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  max-width: 100vw;
+  overflow: hidden;
+}
+
+.navigation {
+  display: flex;
+}
+
+/* Navbar items */
+.navigation > p {
+  padding: 0px 30px;
+  font-size: 16px;
+  font-family: var(--sans)
+}
+
+main {
+  padding: 0px 30px 30px 30px;
+}
+
+h1 {
+  font-size: 70px !important;
+  font-family: var(--sans);
+  font-weight: 700 !important;
+  padding-bottom: 30px;
+}
+
+.bio p {
+  font-family: var(--sans);
+}
+
+.pic {
+  max-width: 85vw;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.icon {
+  margin: 0px 30px;
+  font-size: 25px;
+  color: rgb(179, 179, 179);
+  color: rgb(179, 188, 197);
+}
+
+h2 {
+  font-family: var(--serif);
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.contact-form {
+  font-family: var(--sans);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input, textarea, button{
+  width: 80vw;
+  padding: 6px;
+  margin: 10px 0px !important;
+  border: 1px solid rgb(169, 169, 169);
+  border-radius: 5px;
+
+}
+
+textarea {
+  height: 200px;
+}
+
+button {
+  border: 1px solid rgb(169, 169, 169);
+  background-color: rgb(116, 130, 145);
+  color: white;
+  padding: 6px;
+}
+
+@media screen and (min-width: 896px) {
+  main {
+    padding: 30px;
+  }
+
+  h1 {
+    padding-bottom: 60px;
+  }
+
+  .about-section {
+    display: flex;
+  }
+
+  .bio {
+    text-align: end;
+    padding-right: 20px;
+  }
+
+  .pic {
+    width: 350px;
+    height: auto;
+  }
+
+  input, textarea, button{
+    width: 700px;
+  }
 }
