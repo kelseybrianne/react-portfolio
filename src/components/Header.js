@@ -1,14 +1,18 @@
-const Header = () => {
+const Header = ({ changePage }) => {
+    const handleNavClick = () => {
+        // setCurrentPage()
+    }
+
   return (
    <nav>
        <div>
            
        </div>
        <div className="navigation">
-           <p>About Me</p>
-           <p>Portfolio</p>
-           <p>Contact</p>
-           <p>Resume</p>
+           <li>About Me</li>
+           <li>Portfolio</li>
+           <li>Contact</li>
+           <li>Resume</li>
        </div>
    </nav>
   )
