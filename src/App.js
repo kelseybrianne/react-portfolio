@@ -6,11 +6,13 @@ import Footer from "./components/Footer"
 import Navigation from "./components/Navigation"
 import 'bootstrap/dist/css/bootstrap.css';
 
+const currentPage = 'About Me'
+
 function App() {
   return (
     <div className="App">
       <Header />
-      <Navigation />
+      <Navigation currentPage={currentPage}/>
       <Footer />
     </div>
   );
