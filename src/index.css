@@ -27,7 +27,8 @@ nav {
 .navigation > li {
   padding: 0px 30px;
   font-size: 16px;
-  font-family: var(--sans)
+  font-family: var(--sans);
+  cursor: pointer;
 }
 
 main {

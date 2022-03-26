@@ -1,18 +1,14 @@
-const Header = ({ changePage }) => {
-    const handleNavClick = () => {
-        // setCurrentPage()
-    }
-
-  return (
+const Header = ({ setCurrentPage }) => {
+   return (
    <nav>
        <div>
            
        </div>
        <div className="navigation">
-           <li>About Me</li>
-           <li>Portfolio</li>
-           <li>Contact</li>
-           <li>Resume</li>
+           <li onClick={() => setCurrentPage('About Me')}>About Me</li>
+           <li onClick={() => setCurrentPage('Portfolio')}>Portfolio</li>
+           <li onClick={() => setCurrentPage('Contact')}>Contact</li>
+           <li onClick={() => setCurrentPage('Resume')}>Resume</li>
        </div>
    </nav>
   )
