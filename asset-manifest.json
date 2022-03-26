@@ -1,16 +1,20 @@
 {
   "files": {
-    "main.css": "/react-portfolio/static/css/main.073c9b0a.css",
-    "main.js": "/react-portfolio/static/js/main.7c918f2f.js",
-    "static/js/787.a2cb61a6.chunk.js": "/react-portfolio/static/js/787.a2cb61a6.chunk.js",
-    "static/media/logo.svg": "/react-portfolio/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "main.css": "/react-portfolio/static/css/main.cded026a.css",
+    "main.js": "/react-portfolio/static/js/main.397a1599.js",
+    "static/media/portfolio-screenshot.png": "/react-portfolio/static/media/portfolio-screenshot.6a60048cb7e5cba55582.png",
+    "static/media/portrait-of-kelsey-mailau.JPG": "/react-portfolio/static/media/portrait-of-kelsey-mailau.9c99749ef6011bdbd275.JPG",
+    "static/media/day-planner-screenshot.png": "/react-portfolio/static/media/day-planner-screenshot.04c4bd07469174410dc7.png",
+    "static/media/technicals-homepage.png": "/react-portfolio/static/media/technicals-homepage.91dc2ca3728a260a843d.png",
+    "static/media/code-quiz-screenshot.png": "/react-portfolio/static/media/code-quiz-screenshot.0b2df28d9b82dcfd6cda.png",
+    "static/media/text-editor-homepage.png": "/react-portfolio/static/media/text-editor-homepage.8a53c92915a7a5e4eceb.png",
+    "static/media/kelsey-mailau-resume.pdf": "/react-portfolio/static/media/kelsey-mailau-resume.10e96abb32aecf201bd6.pdf",
     "index.html": "/react-portfolio/index.html",
-    "main.073c9b0a.css.map": "/react-portfolio/static/css/main.073c9b0a.css.map",
-    "main.7c918f2f.js.map": "/react-portfolio/static/js/main.7c918f2f.js.map",
-    "787.a2cb61a6.chunk.js.map": "/react-portfolio/static/js/787.a2cb61a6.chunk.js.map"
+    "main.cded026a.css.map": "/react-portfolio/static/css/main.cded026a.css.map",
+    "main.397a1599.js.map": "/react-portfolio/static/js/main.397a1599.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.7c918f2f.js"
+    "static/css/main.cded026a.css",
+    "static/js/main.397a1599.js"
   ]
 }
