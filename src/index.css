@@ -31,6 +31,10 @@ nav {
   cursor: pointer;
 }
 
+.current-page {
+  color: rgb(228, 182, 64);
+}
+
 main {
   padding: 0px 30px 30px 30px;
 }
@@ -160,14 +164,12 @@ button {
   .navigation {
     flex-direction: row;
   }
-
 }
 
 @media screen and (min-width: 896px) {
   main {
     padding: 30px 60px;
   }
-
 
   h1 {
     padding-bottom: 60px;
