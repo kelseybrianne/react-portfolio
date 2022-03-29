@@ -1,4 +1,4 @@
-import portrait from "../portrait-of-kelsey-mailau.JPG";
+import portrait from "../images/portrait-of-kelsey-mailau.JPG";
 
 const About = () => {
   return (

@@ -4,7 +4,9 @@ import Footer from "./components/Footer"
 import CurrentPage from "./components/CurrentPage"
 
 function App() {
-  const [currentPage, setCurrentPage] = useState('About Me');
+  const [currentPage, setCurrentPage] = useState(() => {
+    return document.location.hash.slice(1);
+  });
 
   return (
     <div className="App">
