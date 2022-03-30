@@ -1,6 +1,6 @@
 :root {
   --serif: "Noto Serif Display", serif;
-  --sans: 'Lato', sans-serif;
+  --sans: "Lato", sans-serif;
 }
 
 #root {
@@ -12,18 +12,20 @@
 
 nav {
   padding: 30px;
-  max-width: 100vw;
-  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
 }
 
 .navigation {
   display: flex;
   flex-direction: column;
+  align-items: flex-end;
+  transform: translateX(40px);
 }
 
 /* Navbar items */
-.navigation > li {
-  padding: 0px 30px;
+.navigation > p {
+  padding-right: 50px;
   font-size: 16px;
   font-family: var(--sans);
   cursor: pointer;
@@ -74,7 +76,7 @@ footer {
 h2 {
   font-family: var(--serif);
   font-size: 20px !important;
-  width: 50ch;
+  padding-bottom: 10px;
 }
 
 #contact-page h2 {
@@ -87,13 +89,14 @@ h2 {
   flex-direction: column;
 }
 
-input, textarea, button{
+input,
+textarea,
+button {
   width: 80vw;
   padding: 6px;
   margin: 10px 0px !important;
   border: 1px solid rgb(198, 198, 198);
   border-radius: 3px;
-
 }
 
 textarea {
@@ -116,6 +119,12 @@ button {
   border-radius: 3px !important;
 }
 
+.form-alert {
+  color: red;
+  padding: 5px 0px;
+  margin-bottom: 0px;
+}
+
 #download-btn {
   width: auto;
   font-size: 30px;
@@ -124,7 +133,6 @@ button {
 }
 
 .portfolio-container {
-  /* justify-content: space-between; */
   margin: 0px;
   padding: 0px;
 }
@@ -185,28 +193,21 @@ button {
   color: gray;
 }
 
-@media screen and (min-width: 500px) {
-  nav {
-    overflow: visible;
-  }
-
-  .navigation {
-    flex-direction: row;
-  }
-}
-
 @media screen and (min-width: 896px) {
   main {
     padding: 30px 60px;
   }
 
-  nav {
-    display: flex;
-    justify-content: space-between;
+  .navigation {
+    flex-direction: row;
   }
 
   h1 {
     padding-bottom: 60px;
+  }
+
+  h2 {
+    width: 50ch;
   }
 
   .about-section {
@@ -224,7 +225,9 @@ button {
     height: auto;
   }
 
-  input, textarea, button{
+  input,
+  textarea,
+  button {
     width: 500px;
   }
 

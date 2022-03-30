@@ -5,34 +5,34 @@ const Nav = ({ setCurrentPage, currentPage }) => {
         <h2>Kelsey Betteridge</h2>
       </div>
       <div className="navigation">
-        <li
+        <p
           key={1}
           onClick={() => setCurrentPage("About Me")}
           className={currentPage === "About Me" ? "current-page" : ""}
         >
           About Me
-        </li>
-        <li
+        </p>
+        <p
           key={2}
           className={currentPage === "Portfolio" ? "current-page" : ""}
           onClick={() => setCurrentPage("Portfolio")}
         >
           Portfolio
-        </li>
-        <li
+        </p>
+        <p
           key={3}
           className={currentPage === "Contact" ? "current-page" : ""}
           onClick={() => setCurrentPage("Contact")}
         >
           Contact
-        </li>
-        <li
+        </p>
+        <p
           key={4}
           className={currentPage === "Resume" ? "current-page" : ""}
           onClick={() => setCurrentPage("Resume")}
         >
           Resume
-        </li>
+        </p>
       </div>
     </nav>
   );
