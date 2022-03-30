@@ -126,13 +126,17 @@ button {
 }
 
 .portfolio-container {
-  justify-content: space-between;
+  /* justify-content: space-between; */
   margin: 0px;
   padding: 0px;
-
 }
 
-.relative {
+.portfolio-row {
+  display: flex;
+  justify-content: center;
+}
+
+.project-div {
   position: relative;
 }
 
@@ -142,22 +146,45 @@ button {
   height: 210px;
   object-fit: cover;
   object-position: 0% 0%;
+  position: relative;
 }
 
 .project-description {
   padding: 20px 30px;
-  width: 360px;
-  height: 210px;
+  transform: translateX(41px) translateY(20px);
+  width: 301px;
+  height: 170px;
   padding: 20px;
   text-align: center;
-  background-color: white;
+  background-color: rgb(244, 244, 244);
+  color: rgb(40, 40, 40);
   position: absolute;
-  top: 0%;
-  left: 0%;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.project-description:hover {
-  display: block;
+.project-div:hover .project-description {
+  opacity: 1;
+  visibility: visible;
+}
+
+.project-description h3 {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.project-icon {
+  color: black;
+  margin-left: 5px;
+}
+
+.project-icon:hover {
+  color: gray;
 }
 
 @media screen and (min-width: 500px) {

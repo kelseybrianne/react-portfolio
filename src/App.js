@@ -10,6 +10,7 @@ function App() {
   // const [currentPage, setCurrentPage] = useState(() => {
   //   return document.location.hash.slice(1);
   // });
+  console.log(document.location);
 
   return (
     <div className="App">
