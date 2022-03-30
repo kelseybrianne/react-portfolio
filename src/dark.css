@@ -1,31 +1,23 @@
 :root {
-  --serif: 'Lora', serif;
+  --serif: "Lora", serif;
   --sans: "Lato", sans-serif;
-  --body-color: white;
 }
 
 body {
-  background-color: var(--body);
+  background-color: black;
 }
 
 #root {
-  padding: 0;
+  padding: 0px;
   font-family: var(--sans);
-  /* max-width: 80vw; */
+  max-width: 80rem;
   margin: 0px auto;
-}
-
-.dark-theme {
-  background-color: rgb(19, 19, 19);
-  color: rgb(223, 223, 223);
 }
 
 nav {
   padding: 30px;
   display: flex;
   justify-content: space-between;
-  max-width: 80vw;
-  margin: 0px auto;
 }
 
 .navigation {
@@ -50,8 +42,6 @@ nav {
 
 main {
   padding: 0px 30px 30px 30px;
-  max-width: 80vw;
-  margin: 0px auto;
 }
 
 h1 {
@@ -72,6 +62,20 @@ h1 {
 
 .pic {
   max-width: 85vw;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 0px 30px;
+}
+
+.icon {
+  margin: 0px 30px;
+  font-size: 25px;
+  color: rgb(179, 179, 179);
+  color: rgb(179, 188, 197);
 }
 
 #logo {
@@ -125,34 +129,6 @@ button {
   border-radius: 3px !important;
 }
 
-#theme-btn {
-  width: 100px;
-  height: 35px;
-  justify-self: end;
-  position: absolute;
-  right: 14vw;
-  bottom: 15px;
-}
-
-footer {
-  justify-content: center;
-  padding: 60px 0px 30px;
-  text-align: center;
-  position: relative;
-}
-
-.social-link-icons {
-  display: inline;
-  
-}
-
-.icon {
-  margin: 0px 30px;
-  font-size: 25px;
-  color: rgb(179, 179, 179);
-  color: rgb(179, 188, 197);
-}
-
 .form-alert {
   color: red;
   padding: 5px 0px;
@@ -204,10 +180,10 @@ footer {
   justify-content: center;
   align-items: center;
   transform: scale(1.1);
-  transition: opacity .2s, transform .2s
+  transition: opacity 0.2s, transform 0.2s;
 }
 
-.project-div:hover .project-description, 
+.project-div:hover .project-description,
 .project-div:focus .project-description {
   opacity: 1;
   visibility: visible;
