@@ -1,12 +1,17 @@
 :root {
-  --serif: "Noto Serif Display", serif;
+  --serif: 'Lora', serif;
   --sans: "Lato", sans-serif;
+  --body-color: white;
+}
+
+body {
+  background-color: var(--body);
 }
 
 #root {
   padding: 0px;
   font-family: var(--sans);
-  max-width: 70rem;
+  max-width: 80rem;
   margin: 0px auto;
 }
 
@@ -29,6 +34,7 @@ nav {
   font-size: 16px;
   font-family: var(--sans);
   cursor: pointer;
+  width: 120px;
 }
 
 .current-page {
@@ -71,6 +77,11 @@ footer {
   font-size: 25px;
   color: rgb(179, 179, 179);
   color: rgb(179, 188, 197);
+}
+
+#logo {
+  /* text-transform: uppercase; */
+  font-size: 25px !important;
 }
 
 h2 {
@@ -144,39 +155,42 @@ button {
 
 .project-div {
   position: relative;
+  margin: 20px 30px;
+  width: 330px;
+  height: 194px;
 }
 
 .portfolio-pic {
-  padding: 20px 30px;
-  width: 360px;
-  height: 210px;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  object-position: 0% 0%;
-  position: relative;
+  object-position: 50% 0%;
 }
 
 .project-description {
-  padding: 20px 30px;
-  transform: translateX(41px) translateY(20px);
-  width: 301px;
-  height: 170px;
-  padding: 20px;
-  text-align: center;
-  background-color: rgb(249, 249, 249);
-  color: rgb(40, 40, 40);
   position: absolute;
+  width: 100%;
+  height: 100%;
   top: 0;
   left: 0;
+  /* text-align: center; */
+  background-color: rgb(249, 249, 249);
+  color: rgb(40, 40, 40);
   visibility: hidden;
   opacity: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  transform: scale(1.1);
+  transition: opacity 200ms, transform 200ms
 }
 
-.project-div:hover .project-description {
+.project-div:hover .project-description, 
+.project-div:focus .project-description {
   opacity: 1;
   visibility: visible;
+  transform: scale(1);
 }
 
 .project-description h3 {
@@ -196,10 +210,6 @@ button {
 @media screen and (min-width: 896px) {
   main {
     padding: 30px 60px;
-  }
-
-  .navigation {
-    flex-direction: row;
   }
 
   h1 {
@@ -230,7 +240,11 @@ button {
   button {
     width: 500px;
   }
+}
 
-  #resume-page {
+@media screen and (min-width: 1200px) {
+  .navigation {
+    flex-direction: row;
+    transform: none;
   }
 }

@@ -4,7 +4,7 @@
         "title": "Item 1",
         "url": "https://the-technicals.herokuapp.com/",
         "github": "https://github.com/kelseybrianne/tech-blog",
-        "image": ".../images/technicals-homepage.png",
+        "image": "./images/technicals-homepage.png",
         "alt": "",
         "description": ""
     },
@@ -13,7 +13,7 @@
         "title": "Portfolio",
         "url": "https://the-technicals.herokuapp.com/",
         "github": "https://github.com/kelseybrianne/tech-blog",
-        "image": "../images/portfolio-screenshot.png",
+        "image": "./images/portfolio-screenshot.png",
         "alt": "",
         "description": ""
     }

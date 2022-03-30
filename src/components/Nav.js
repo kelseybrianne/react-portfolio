@@ -2,7 +2,7 @@ const Nav = ({ setCurrentPage, currentPage }) => {
   return (
     <nav>
       <div>
-        <h2>Kelsey Betteridge</h2>
+        <h2 id="logo">Kelsey Betteridge</h2>
       </div>
       <div className="navigation">
         <p
