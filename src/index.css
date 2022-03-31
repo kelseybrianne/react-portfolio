@@ -52,6 +52,7 @@ main {
   padding: 0px 30px 30px 30px;
   max-width: 80vw;
   margin: 0px auto;
+  min-height: 75vh;
 }
 
 h1 {

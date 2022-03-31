@@ -5,17 +5,18 @@ import portfolio from "../images/portfolio-screenshot.png";
 import textEditor from "../images/text-editor-homepage.png";
 import codeQuiz from "../images/code-quiz-screenshot.png";
 import dailies from "../images/dailies-screenshot.png";
-import portfolioData from "../data/portfolio.json";
+import { portfolioData } from "../utils/portfolioData.js";
 import { FaGithub } from "react-icons/fa";
 
 const Portfolio = () => {
   return (
     <main>
       <h1>Explore my most recent projects in web development</h1>
-      {/* <Container className="portfolio-container">
-        <Row>
+      <Container className="portfolio-container">
+        <Row className="portfolio-row">
           {portfolioData.map(({ id, title, url, github, image, alt, description }) => (
-            <Col xs={12} md={6} lg={4} className="relative">
+            
+            <Col xs={12} md={6} lg={4} className="project-div">
               <img
                 src={image}
                 className="portfolio-pic"
@@ -28,7 +29,7 @@ const Portfolio = () => {
             </Col>
           ))}
         </Row>
-      </Container> */}
+      </Container>
       <Container fluid className="portfolio-container">
         <Row className="portfolio-row">
           <Col xs={12} md={6} lg={4} className="project-div">
