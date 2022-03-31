@@ -21,7 +21,7 @@ function App() {
   return (
     <div className={theme === 'Light' ? "App" : 'App dark-theme'}>
       <Nav currentPage={currentPage} setCurrentPage={setCurrentPage} />
-      <CurrentPage currentPage={currentPage}/>
+      <CurrentPage theme={theme} currentPage={currentPage}/>
       <Footer toggleTheme={toggleTheme} theme={theme} />
       {/* <Button toggleTheme={toggleTheme} theme={theme} /> */}
     </div>

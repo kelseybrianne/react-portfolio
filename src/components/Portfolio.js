@@ -1,36 +1,42 @@
 import { Container, Row, Col } from "react-bootstrap";
-import techBlog from "../images/technicals-homepage.png";
-import dayPlanner from "../images/day-planner-screenshot.png";
-import portfolio from "../images/portfolio-screenshot.png";
-import textEditor from "../images/text-editor-homepage.png";
-import codeQuiz from "../images/code-quiz-screenshot.png";
-import dailies from "../images/dailies-screenshot.png";
 import { portfolioData } from "../utils/portfolioData.js";
 import { FaGithub } from "react-icons/fa";
 
-const Portfolio = () => {
+const Portfolio = ({ theme }) => {
   return (
     <main>
       <h1>Explore my most recent projects in web development</h1>
       <Container className="portfolio-container">
         <Row className="portfolio-row">
-          {portfolioData.map(({ id, title, url, github, image, alt, description }) => (
-            
-            <Col xs={12} md={6} lg={4} className="project-div">
-              <img
-                src={image}
-                className="portfolio-pic"
-                alt={alt}
-              />
-              <div className="project-description">
-                <h3>{title}</h3>
-                <p>{description}</p>
-              </div>
-            </Col>
-          ))}
+          {portfolioData.map(
+            ({ id, title, url, github, image, alt, description }) => (
+              <Col xs={12} md={6} lg={4} key={id} className="project-div">
+                <a
+                  href={url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    src={image}
+                    className="portfolio-pic"
+                    alt={alt}
+                  />
+                  <div className="project-description">
+                    <h3>
+                      {title}{" "}
+                      <a href={github}>
+                        <FaGithub className="project-icon" />
+                      </a>
+                    </h3>
+                    <p>{description}</p>
+                  </div>
+                </a>
+              </Col>
+            )
+          )}
         </Row>
       </Container>
-      <Container fluid className="portfolio-container">
+      {/* <Container fluid className="portfolio-container">
         <Row className="portfolio-row">
           <Col xs={12} md={6} lg={4} className="project-div">
             <a
@@ -165,7 +171,7 @@ const Portfolio = () => {
             </a>
           </Col>
         </Row>
-      </Container>
+      </Container> */}
     </main>
   );
 };

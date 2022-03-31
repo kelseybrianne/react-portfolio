@@ -14,11 +14,6 @@ body {
   margin: 0px auto;
 }
 
-.dark-theme {
-  background-color: rgb(19, 19, 19);
-  color: rgb(223, 223, 223);
-}
-
 nav {
   padding: 30px;
   display: flex;
@@ -105,6 +100,12 @@ button {
   border-radius: 3px;
 }
 
+.dark-theme input,
+.dark-theme textarea {
+  border: 1px solid rgb(67, 67, 67);
+  background-color: rgb(29, 29, 29);
+}
+
 textarea {
   height: 150px;
 }
@@ -139,6 +140,11 @@ footer {
   padding: 60px 0px 30px;
   text-align: center;
   position: relative;
+}
+
+.dark-theme {
+  background-color: rgb(19, 19, 19);
+  color: rgb(223, 223, 223);
 }
 
 .social-link-icons {
@@ -205,6 +211,11 @@ footer {
   align-items: center;
   transform: scale(1.1);
   transition: opacity .2s, transform .2s
+}
+
+.dark-theme .project-description {
+  background-color: rgb(94, 94, 94);
+  color: rgb(223, 223, 223);
 }
 
 .project-div:hover .project-description, 

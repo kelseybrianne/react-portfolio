@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { validateEmail } from '../utils/validateEmail';
 
-const Contact = () => {
+const Contact = ({ theme }) => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
@@ -34,8 +34,9 @@ const Contact = () => {
         Drop your name, email address, and a brief message below and I will get
         back to you shortly.
       </h2> */}
-      <form onSubmit={handleFormSubmit} className="contact-form">
+      <form onSubmit={handleFormSubmit} className={theme === 'Dark' ? 'dark-theme contact-form' : 'contact-form'}>
         <input
+          // className={theme === 'Dark' ? 'dark-theme' : ''}
           id="name"
           type="name"
           value={name}
