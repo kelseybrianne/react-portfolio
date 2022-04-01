@@ -65,55 +65,64 @@ export const backEndProficienciesData = [
     url: "https://nodejs.org/en/",
     style: {},
   },
-  // {
-  //     id: 2,
-  //     name: 'MySQL',
-  //     img: require('../assets/icons/expressjs-icon.png'),
-  //     url: '',
-  //     style: {
-  //         maxWidth: '50px'
-  //     }
-  // },
   {
-    id: 3,
-    name: "MongoDB",
-    img: require("../assets/icons/icons8-mongodb-a-cross-platform-document-oriented-database-program-100.png"),
-    url: "https://www.mongodb.com/",
-    style: {},
+      id: 2,
+      name: 'Heroku',
+      img: require('../assets/icons/icons8-heroku-100.png'),
+      url: 'https://www.heroku.com/',
+      style: {
+          maxWidth: '50px'
+      }
   },
   {
-    id: 4,
-    name: "GraphQL",
-    img: require("../assets/icons/icons8-graphql-100.png"),
-    url: "https://graphql.org/",
-    style: {},
-  },
-  {
-    id: 5,
-    name: "Apollo",
-    img: require("../assets/icons/icons8-apollo-100.png"),
-    url: "https://www.apollographql.com/docs/",
-    style: {},
-  },
-  {
-    id: 6,
-    name: "JSON",
-    img: require("../assets/icons/icons8-json-100.png"),
-    url: "https://www.json.org/json-en.html",
-    style: {},
-  },
-  {
-    id: 7,
-    name: "MySQL",
-    img: require("../assets/icons/icons8-mysql-logo-100.png"),
-    url: "https://www.mysql.com/",
-    style: {},
-  },
-  {
-    id: 8,
-    name: "Redux",
-    img: require("../assets/icons/icons8-redux-100.png"),
-    url: "https://redux.js.org/",
-    style: {},
-  },
+      id: 3,
+      name: "MongoDB",
+      img: require("../assets/icons/icons8-mongodb-a-cross-platform-document-oriented-database-program-100.png"),
+      url: "https://www.mongodb.com/",
+      style: {},
+    },
+    {
+        id: 4,
+        name: "GraphQL",
+        img: require("../assets/icons/icons8-graphql-100.png"),
+        url: "https://graphql.org/",
+        style: {},
+    },
+    {
+        id: 5,
+        name: "Apollo",
+        img: require("../assets/icons/icons8-apollo-100.png"),
+        url: "https://www.apollographql.com/docs/",
+        style: {},
+    },
+    {
+        id: 6,
+        name: "JSON",
+        img: require("../assets/icons/icons8-json-100.png"),
+        url: "https://www.json.org/json-en.html",
+        style: {},
+    },
+    {
+        id: 7,
+        name: "MySQL",
+        img: require("../assets/icons/icons8-mysql-logo-100.png"),
+        url: "https://www.mysql.com/",
+        style: {},
+    },
+    {
+        id: 8,
+        name: "Redux",
+        img: require("../assets/icons/icons8-redux-100.png"),
+        url: "https://redux.js.org/",
+        style: {},
+    },
+    // {
+    //     id: 2,
+    //     name: 'MySQL',
+    //     img: require('../assets/icons/expressjs-icon.png'),
+    //     url: '',
+    //     style: {
+    //         maxWidth: '50px'
+    //     }
+    // },
 ];
