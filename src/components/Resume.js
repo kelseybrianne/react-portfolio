@@ -1,5 +1,6 @@
 import resume from "../kelsey-mailau-resume.pdf";
 import { HiOutlineDocumentDownload } from "react-icons/hi";
+import { frontEndProficienciesData, backEndProficienciesData } from "../utils/proficienciesData";
 
 const Resume = () => {
   return (
@@ -16,25 +17,32 @@ const Resume = () => {
         </a>
       </div>
       <h3>Front-End Proficiencies</h3>
-      <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>jQuery</li>
-        <li>Bootstrap</li>
-        <li>ReactJS</li>
-        <li>Responsive Design</li>
+      <ul className="icon-proficiencies-list">
+        {frontEndProficienciesData.map(({ id, name, img, url }) => (
+          <li key={id}>
+            <a href={url} target="_blank" rel="noopener noreferrer">
+              <img src={img} alt={name} title={name} />
+            </a>
+          </li>
+        ))}
       </ul>
 
       <h3>Back-End Proficiencies</h3>
-      <ul>
-        <li>Node.js</li>
+      <ul className="icon-proficiencies-list">
+      {backEndProficienciesData.map(({ id, name, img, url, style }) => (
+          <li key={id}>
+            <a href={url} target="_blank" rel="noopener noreferrer">
+              <img src={img} alt={name} title={name} style={{style}} />
+            </a>
+          </li>
+        ))}
+        {/* <li>Node.js</li>
         <li>Express.js</li>
         <li>MySQL</li>
         <li>Sequelize</li>
         <li>Handlebars</li>
         <li>MongoDB</li>
-        <li>Mongoose</li>
+        <li>Mongoose</li> */}
       </ul>
     </main>
   );

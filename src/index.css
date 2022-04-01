@@ -104,6 +104,7 @@ button {
 .dark-theme textarea {
   border: 1px solid rgb(67, 67, 67);
   background-color: rgb(29, 29, 29);
+  color: rgb(233, 233, 233);
 }
 
 textarea {
@@ -133,6 +134,10 @@ button {
   position: absolute;
   right: 14vw;
   bottom: 15px;
+}
+
+#theme-btn:hover {
+  background-color: rgb(95, 105, 118);
 }
 
 footer {
@@ -210,12 +215,7 @@ footer {
   justify-content: center;
   align-items: center;
   transform: scale(1.1);
-  transition: opacity .2s, transform .2s
-}
-
-.dark-theme .project-description {
-  background-color: rgb(94, 94, 94);
-  color: rgb(223, 223, 223);
+  transition: opacity .2s, transform .2s;
 }
 
 .project-div:hover .project-description, 
@@ -223,6 +223,12 @@ footer {
   opacity: 1;
   visibility: visible;
   transform: scale(1);
+}
+
+.dark-theme .project-description,
+.dark-theme .project-icon {
+  background-color: rgb(41, 41, 41);
+  color: rgb(223, 223, 223);
 }
 
 .project-description h3 {
@@ -235,8 +241,38 @@ footer {
   margin-left: 5px;
 }
 
+/* .dark-theme .project-icon {
+  color: rgb(223, 223, 223);
+} */
+
 .project-icon:hover {
   color: gray;
+}
+
+.dark-theme svg {
+  color: rgb(157, 157, 157);
+}
+
+svg:hover {
+  color: rgb(109, 109, 109);
+}
+
+.icon-proficiencies-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.icon-proficiencies-list li {
+  padding: 15px;
+  overflow: hidden;
+  object-fit: scale-down;
+  transform: scale(.9);
+  transition: transform .2s;
+}
+
+.icon-proficiencies-list li:hover {
+  transform: scale(1.1);
 }
 
 @media screen and (min-width: 896px) {
