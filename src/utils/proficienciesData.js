@@ -55,6 +55,13 @@ export const frontEndProficienciesData = [
     url: "https://github.com/",
     style: {},
   },
+  {
+    id: 9,
+    name: "Apollo",
+    img: require("../assets/icons/icons8-apollo-100.png"),
+    url: "https://www.apollographql.com/docs/",
+    style: {},
+},
 ];
 
 export const backEndProficienciesData = [
@@ -86,13 +93,6 @@ export const backEndProficienciesData = [
         name: "GraphQL",
         img: require("../assets/icons/icons8-graphql-100.png"),
         url: "https://graphql.org/",
-        style: {},
-    },
-    {
-        id: 5,
-        name: "Apollo",
-        img: require("../assets/icons/icons8-apollo-100.png"),
-        url: "https://www.apollographql.com/docs/",
         style: {},
     },
     {

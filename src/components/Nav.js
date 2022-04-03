@@ -1,3 +1,5 @@
+// import { Link } from "react-router-dom";
+
 const Nav = ({ setCurrentPage, currentPage }) => {
   return (
     <nav>
@@ -12,6 +14,8 @@ const Nav = ({ setCurrentPage, currentPage }) => {
         >
           About Me
         </p>
+        {/* {To implement when I change to react router} */}
+        {/* <p><Link to={'/about'}>About Me</Link></p> */}
         <p
           key={2}
           className={currentPage === "Portfolio" ? "current-page" : ""}
