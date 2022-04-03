@@ -68,7 +68,7 @@ export const backEndProficienciesData = [
   {
     id: 1,
     name: "Node.js",
-    img: require("../assets/icons/icons8-nodejs-100.png"),
+    img: require("../assets/icons/icons8-node-js-100.png"),
     url: "https://nodejs.org/en/",
     style: {},
   },
