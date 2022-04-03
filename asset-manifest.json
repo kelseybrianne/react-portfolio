@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/react-portfolio/static/css/main.16521141.css",
-    "main.js": "/react-portfolio/static/js/main.e94c3df5.js",
+    "main.js": "/react-portfolio/static/js/main.8c1fca17.js",
     "static/media/portfolio-screenshot.png": "/react-portfolio/static/media/portfolio-screenshot.6a60048cb7e5cba55582.png",
     "static/media/portrait-of-kelsey-mailau.JPG": "/react-portfolio/static/media/portrait-of-kelsey-mailau.9c99749ef6011bdbd275.JPG",
     "static/media/day-planner-screenshot.png": "/react-portfolio/static/media/day-planner-screenshot.04c4bd07469174410dc7.png",
@@ -12,10 +12,10 @@
     "static/media/kelsey-mailau-resume.pdf": "/react-portfolio/static/media/kelsey-mailau-resume.10e96abb32aecf201bd6.pdf",
     "index.html": "/react-portfolio/index.html",
     "main.16521141.css.map": "/react-portfolio/static/css/main.16521141.css.map",
-    "main.e94c3df5.js.map": "/react-portfolio/static/js/main.e94c3df5.js.map"
+    "main.8c1fca17.js.map": "/react-portfolio/static/js/main.8c1fca17.js.map"
   },
   "entrypoints": [
     "static/css/main.16521141.css",
-    "static/js/main.e94c3df5.js"
+    "static/js/main.8c1fca17.js"
   ]
 }
