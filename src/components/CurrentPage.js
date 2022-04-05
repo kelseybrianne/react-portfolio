@@ -5,13 +5,13 @@ import Resume from "./Resume";
 
 const CurrentPage = ({ currentPage }) => {
   switch (currentPage) {
-    case "About Me":
+    case "about-me":
       return <About />;
-    case "Portfolio":
+    case "portfolio":
       return <Portfolio />;
-    case "Contact":
+    case "contact":
       return <Contact />;
-    case "Resume":
+    case "resume":
       return <Resume />;
     default :
       return <About />

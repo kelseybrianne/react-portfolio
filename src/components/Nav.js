@@ -7,36 +7,40 @@ const Nav = ({ setCurrentPage, currentPage }) => {
         <h2>Kelsey Betteridge</h2>
       </div>
       <div className="navigation">
-        <p
+        <a
           key={1}
-          onClick={() => setCurrentPage("About Me")}
+          href="#about-me"
+          onClick={() => setCurrentPage("about-me")}
           className={currentPage === "About Me" ? "current-page" : ""}
         >
           About Me
-        </p>
+        </a>
         {/* {To implement when I change to react router} */}
         {/* <p><Link to={'/about'}>About Me</Link></p> */}
-        <p
+        <a
+          href="#portfolio"
           key={2}
-          className={currentPage === "Portfolio" ? "current-page" : ""}
-          onClick={() => setCurrentPage("Portfolio")}
+          className={currentPage === "portfolio" ? "current-page" : ""}
+          onClick={() => setCurrentPage("portfolio")}
         >
           Portfolio
-        </p>
-        <p
+        </a>
+        <a
+          href="#contact"
           key={3}
-          className={currentPage === "Contact" ? "current-page" : ""}
-          onClick={() => setCurrentPage("Contact")}
+          className={currentPage === "contact" ? "current-page" : ""}
+          onClick={() => setCurrentPage("contact")}
         >
           Contact
-        </p>
-        <p
+        </a>
+        <a 
+          href="#resume"
           key={4}
-          className={currentPage === "Resume" ? "current-page" : ""}
-          onClick={() => setCurrentPage("Resume")}
+          className={currentPage === "resume" ? "current-page" : ""}
+          onClick={() => setCurrentPage("resume")}
         >
           Resume
-        </p>
+        </a>
       </div>
     </nav>
   );
